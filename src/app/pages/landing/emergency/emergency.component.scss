@@ -1,0 +1,12 @@
+// Path updated to reflect the new location inside src/app/pages/landing/
+@use '../../../../theme/breakpoints' as breakpoints;
+
+:host > * {
+  display: block;
+  padding: 50px;
+  padding-top: 0;
+
+  @media #{breakpoints.$breakpoint-lt-md} {
+    padding: 50px 25px;
+  }
+}

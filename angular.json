@@ -126,7 +126,9 @@
               ]
             },
             "development": {
-              "serviceWorker": false
+              "serviceWorker": false,
+              "prerender": false,
+              "ssr": false
             }
           },
           "defaultConfiguration": "development"
@@ -147,7 +149,8 @@
             "development": {
               "buildTarget": "sign-translate:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

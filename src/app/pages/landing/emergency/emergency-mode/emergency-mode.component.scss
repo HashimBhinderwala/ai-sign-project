@@ -1,0 +1,50 @@
+// Path updated to reflect the new location inside src/app/pages/landing/emergency/
+@use '../../../../../theme/breakpoints' as breakpoints;
+
+// Base styles are inherited from the teach-mode component for consistency.
+// Colors are updated to an urgent/danger theme.
+
+#emergency-mode-grid,
+#emergency-mode-details {
+  padding: 1.5rem;
+  line-height: 1.6;
+
+  h1,
+  h2 {
+    font-weight: 600;
+    color: #a91e2c; // A strong, dark red for headings.
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+
+    span {
+      color: #eb445a; // Use Ionic's "danger" red for emphasis.
+    }
+  }
+
+  p {
+    color: #444; // Keep body text readable.
+  }
+}
+
+#emergency-mode-details {
+  padding-top: 2rem; // Add some space between the two main sections.
+}
+
+// Keep the section styling consistent with the rest of the app.
+.abstract,
+.how-it-works,
+.use-cases {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+// Standard list styling.
+ol,
+ul {
+  padding-left: 1.2rem;
+}

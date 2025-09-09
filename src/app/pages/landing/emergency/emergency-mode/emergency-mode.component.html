@@ -1,0 +1,72 @@
+<!-- 
+  This component provides the user interface for the Emergency Mode feature.
+  It is designed to be visually similar to the about-teach-mode component for consistency,
+  but with a theme that communicates urgency and importance.
+-->
+<div id="emergency-mode-grid">
+  <div style="text-align: center">
+    <!-- 
+      Centered label for the feature.
+      The colors are changed to red tones to indicate an emergency function.
+    -->
+    <span
+      style="
+        display: inline-block;
+        background-color: #eb445a; /* Ionic Danger Red */
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 1.8rem;
+        padding: 0.6em 1.2em;
+        border-radius: 12px;
+        margin: 1.5rem 0 1rem 0;
+      ">
+      Emergency Mode
+    </span>
+  </div>
+
+  <h1>Instantly Signal for <span>Help</span></h1>
+  <p>
+    Emergency Mode is a critical feature for urgent situations. It allows you to use sign language to immediately alert
+    authorities, connecting you to help when you can't speak or hear.
+  </p>
+
+  <!-- This button should trigger the main emergency function of the app. -->
+  <ion-button routerLink="/translate" shape="round" color="danger">
+    Activate Emergency Mode
+    <ion-icon slot="end" name="alert-circle-outline"></ion-icon>
+  </ion-button>
+</div>
+
+<!-- 
+  This section provides detailed information about how the feature works and when to use it.
+  
+-->
+<div id="emergency-mode-details">
+  <section class="abstract">
+    <h2>For Urgent Use Only</h2>
+    <p>
+      This feature is designed to connect you directly with local emergency services. The app will translate your signed
+      message and automatically share your current location to ensure a fast and accurate response. Only use this in
+      genuine emergencies.
+    </p>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How it Works</h2>
+    <ol>
+      <li>Press the "Activate Emergency Mode" button.</li>
+      <li>Sign your message clearly to the camera (e.g., "Police," "Fire," "Medical Help").</li>
+      <li>The app translates the sign and sends your request and location to authorities.</li>
+    </ol>
+  </section>
+
+  <section class="use-cases">
+    <h2>When to Use Emergency Mode</h2>
+    <ul>
+      <li>Medical emergencies like an injury or sudden illness.</li>
+      <li>Reporting a fire, car accident, or other immediate dangers.</li>
+      <li>Requesting police assistance during a threat or crime.</li>
+      <li>Any situation where you are unable to speak or hear to call for help.</li>
+    </ul>
+  </section>
+</div>

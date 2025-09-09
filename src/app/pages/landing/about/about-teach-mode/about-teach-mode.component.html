@@ -1,0 +1,58 @@
+<div id="teach-mode-grid">
+  <div style="text-align: center">
+    <!-- Centered, slightly bigger, shifted down label -->
+    <span
+      style="
+        display: inline-block;
+        background-color: #d1d8e0;
+        color: #2f4a77;
+        font-weight: 600;
+        font-size: 1.8rem; /* slightly bigger */
+        padding: 0.6em 1.2em; /* slightly larger padding */
+        border-radius: 12px;
+        margin: 1.5rem 0 1rem 0; /* add top margin to shift down, bottom margin to separate from text */
+      ">
+      Teach Mode
+    </span>
+  </div>
+
+  <h1>Personalize <span>Gesture Learning</span></h1>
+  <p>
+    Teach Mode is a new interactive feature that lets users teach the app custom words and the corresponding signs.
+    Personalize recognition, expand vocabulary, and share your taught sign–word pairs.
+  </p>
+
+  <ion-button routerLink="/teach-mode" shape="round" color="primary">
+    Learn More
+    <ion-icon slot="end" name="arrow-forward"></ion-icon>
+  </ion-button>
+</div>
+
+<div id="teach-mode-details">
+  <section class="abstract">
+    <h2>Abstract</h2>
+    <p>
+      Teach Mode enables users to extend the app’s vocabulary by pairing custom words with user-provided sign samples.
+      The app stores compact representations of signs for future recognition, supporting personal, regional, and
+      domain-specific gestures.
+    </p>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How it works</h2>
+    <ol>
+      <li>Record or upload a sign clip.</li>
+      <li>Associate a word or phrase with it.</li>
+      <li>Save — the model stores a descriptor for recognition.</li>
+    </ol>
+  </section>
+
+  <section class="use-cases">
+    <h2>Example Use Cases</h2>
+    <ul>
+      <li>Local slang or regional signs</li>
+      <li>Domain-specific gestures</li>
+      <li>Personal shorthand with friends/family</li>
+    </ul>
+  </section>
+</div>
